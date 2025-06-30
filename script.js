@@ -1,4 +1,7 @@
-const socket = io("https://a99ea844-b5cd-4c26-b215-26a30a2742d0-00-dgysv1t6dgvg.sisko.replit.dev/");
+const socket = io("wss://a99ea844-b5cd-4c26-b215-26a30a2742d0-00-dgysv1t6dgvg.sisko.replit.dev", {
+  transports: ["websocket"],
+  withCredentials: false
+});
 
 const form = document.getElementById('form');
 const input = document.getElementById('input');
